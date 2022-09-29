@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(GridLayoutGroup))]
-public class TabbedControl : MonoBehaviour
+public class TabbedControl : MonoBehaviour, IInitializable<TabView.Tab[]>
 {
     public event System.Action<TabView.Tab> TabChanged;
 

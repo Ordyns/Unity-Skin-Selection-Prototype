@@ -32,7 +32,6 @@ public class TabItem : MonoBehaviour, IPointerClickHandler
     public void DeactivateHighlight() => SetHighlightState(false);
 
     private void SetHighlightState(bool state){
-        Debug.Log("IsHighlighted: " + state);
         IsHighlighted = state;
         highlight.gameObject.SetActive(IsHighlighted);
     }

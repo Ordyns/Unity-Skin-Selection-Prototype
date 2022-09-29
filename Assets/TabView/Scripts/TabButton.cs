@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(CanvasGroup))]
-public class TabButton : MonoBehaviour, IPointerClickHandler
+public class TabButton : MonoBehaviour, IInitializable<TabView.Tab>, IPointerClickHandler
 {
     public event System.Action<TabButton, TabView.Tab> Selected;
 
