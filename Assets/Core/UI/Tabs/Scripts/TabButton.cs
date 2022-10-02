@@ -4,21 +4,25 @@ using UnityEngine.EventSystems;
 namespace Tabs
 {
     [RequireComponent(typeof(CanvasGroup))]
-    public class TabButton : MonoBehaviour, IInitializable<ITab>, IPointerClickHandler
+    public class TabButton : MonoBehaviour, IInitializable<Tab>, IPointerClickHandler
     {
-        public event System.Action<TabButton, ITab> Selected;
+        public event System.Action<TabButton, Tab> Selected;
 
         public bool IsSelected { get; private set; }
+
+        [SerializeField] private UnityEngine.UI.Image icon;
 
         private const float SelectedAlpha = 1f;
         private const float UnselectedAlpha = 0.3f;
 
         private CanvasGroup _canvasGroup;
 
-        private ITab _targetTab;
+        private Tab _targetTab;
 
-        public void Initialize(ITab tab){
+        public void Initialize(Tab tab){
             _targetTab = tab;
+
+            icon.sprite = tab.TabIcon;
 
             _canvasGroup = GetComponent<CanvasGroup>();
         }

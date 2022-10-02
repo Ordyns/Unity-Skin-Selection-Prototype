@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be796ea37987f514aaae350300cfa082, type: 3}
+  m_Name: Default Skin
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Steve
+  <ID>k__BackingField: steve
+  <Icon>k__BackingField: {fileID: -6256009797330519623, guid: 1d28827372b473144b84b3e6872628d5, type: 3}
+  <IsLocked>k__BackingField: 0
+  <PreviewAnimation>k__BackingField: {fileID: 7400000, guid: 69302419890a0e447b393380ee1ce019, type: 2}

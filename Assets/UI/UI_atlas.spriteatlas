@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI_atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 128
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 128
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 128
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 33
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 31f70498adc95ad469849744d7e50a78, type: 3}
+    totalSpriteSurfaceArea: 2887
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 8160775752198118580, guid: 692472c21edef5e42a39eca1dd90c2df, type: 3}
+  - {fileID: -1557013538026691241, guid: 692472c21edef5e42a39eca1dd90c2df, type: 3}
+  - {fileID: 82707731993968007, guid: 692472c21edef5e42a39eca1dd90c2df, type: 3}
+  - {fileID: 1080825480604336155, guid: 692472c21edef5e42a39eca1dd90c2df, type: 3}
+  - {fileID: 8586885197115800619, guid: 692472c21edef5e42a39eca1dd90c2df, type: 3}
+  - {fileID: -9136572144232859775, guid: 692472c21edef5e42a39eca1dd90c2df, type: 3}
+  - {fileID: 184950751378207249, guid: d7c09156c36bbe940a0f2a0c571eab6a, type: 3}
+  - {fileID: 1202984965197363600, guid: d7c09156c36bbe940a0f2a0c571eab6a, type: 3}
+  - {fileID: 1161201145128540330, guid: d7c09156c36bbe940a0f2a0c571eab6a, type: 3}
+  - {fileID: 2130535880278150251, guid: d7c09156c36bbe940a0f2a0c571eab6a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - UI_black_overlay
+  - UI_panel
+  - UI_item_background
+  - UI_button
+  - UI_tab_button
+  - UI_outline
+  - icons_skin
+  - icons_stand
+  - icons_lock
+  - icons_checkmark
+  m_RenderDataMap: {}
+  m_Tag: UI_atlas
+  m_IsVariant: 0

@@ -1,44 +1,39 @@
 using UnityEngine;
 using TMPro;
-using System.Linq;
 
 namespace Tabs
 {
-    public class TabView<T> : MonoBehaviour
+    public class TabView : MonoBehaviour
     {
-        public event System.Action<ITabItem<T>> ItemClicked;
+        public int TabsCount { get; private set; }
 
-        [SerializeField] private Tab<T>[] tabs;
-        [Space]
         [SerializeField] private TabbedControl tabbedControl;
-        [Space]
         [SerializeField] private TextMeshProUGUI headline;
+
+        private Tab _selectedTab;
+
+        protected virtual void AddTabs(params Tab[] tabs) {
+            tabbedControl.Initialize(tabs);
     
-        private Tab<T> _selectedTab;
-    
-        private void Awake() {
-            tabbedControl.Initialize(tabs.Cast<ITab>().ToArray());
-    
-            foreach (Tab<T> tab in tabs){
-                tab.Group.ItemClicked += ItemClicked;
-                tab.Group.Deactivate();
+            foreach (Tab tab in tabs){
+                tab.Initialize();
+                tab.Deactivate();
             }
     
             _selectedTab = tabs[0];
             ChangeTab(_selectedTab);
     
+            TabsCount = tabs.Length;
             tabbedControl.TabChanged += ChangeTab;
         }
-    
-        private void ChangeTab(ITab tab){
-            Tab<T> castedTab = (Tab<T>) tab;
 
-            _selectedTab.Group.Deactivate();
-            castedTab.Group.Activate();
+        private void ChangeTab(Tab tab){
+            _selectedTab.Deactivate();
+            tab.Activate();
     
             headline.text = tab.TabName;
     
-            _selectedTab = castedTab;
+            _selectedTab = tab;
         } 
     }
 }
